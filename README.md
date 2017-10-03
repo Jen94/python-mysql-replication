@@ -17,6 +17,6 @@ stream.close()
 def main():
     ioloop.IOLoop.current().run_sync(start_mysql_replication)
     
-if __name__ == "main":
+if __name__ == "__main__":
     main()
 ```
