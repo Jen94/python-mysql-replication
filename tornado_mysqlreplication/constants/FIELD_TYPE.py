@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-# Original code from tornado_mysql
-# Copyright (c) 2010 tornado_mysql contributors
+# Original code from PyMySQL
+# Copyright (c) 2010 PyMySQL contributors
 #
 #Permission is hereby granted, free of charge, to any person obtaining a copy
 #of this software and associated documentation files (the "Software"), to deal
