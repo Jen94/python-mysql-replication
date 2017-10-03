@@ -7,7 +7,7 @@ from tornado_mysql.util import byte2int
 
 from tornado_mysqlreplication import constants, event, row_event
 
-# Constants from tornado_mysql source code
+# Constants from PyMYSQL source code
 NULL_COLUMN = 251
 UNSIGNED_CHAR_COLUMN = 251
 UNSIGNED_SHORT_COLUMN = 252
@@ -186,7 +186,7 @@ class BinLogPacketWrapper(object):
         Length coded numbers can be anywhere from 1 to 9 bytes depending
         on the value of the first byte.
 
-        From tornado_mysql source code
+        From PyMYSQL source code
         """
         c = byte2int(self.read(1))
         if c == NULL_COLUMN:
@@ -207,7 +207,7 @@ class BinLogPacketWrapper(object):
         (unsigned, positive) integer represented in 1-9 bytes followed by
         that many bytes of binary data.  (For example "cat" would be "3cat".)
 
-        From tornado_mysql source code
+        From PyMYSQL source code
         """
         length = self.read_length_coded_binary()
         if length is None:
