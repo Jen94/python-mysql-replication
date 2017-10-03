@@ -58,5 +58,5 @@ mysql -e 'SELECT VERSION();'
 mysql -u root -e "GRANT ALL PRIVILEGES ON *.* TO ''@'localhost';"
 mysql -u root --port=3307 --socket=/var/run/mysqld/mysqld-ctl.sock -e "GRANT ALL PRIVILEGES ON *.* TO ''@'localhost';"
 
-mysql -e 'CREATE DATABASE pymysqlreplication_test;'
-mysql -u root --port=3307 --socket=/var/run/mysqld/mysqld-ctl.sock -e "CREATE DATABASE pymysqlreplication_test;"
+mysql -e 'CREATE DATABASE tornado_mysqlreplication_test;'
+mysql -u root --port=3307 --socket=/var/run/mysqld/mysqld-ctl.sock -e "CREATE DATABASE tornado_mysqlreplication_test;"

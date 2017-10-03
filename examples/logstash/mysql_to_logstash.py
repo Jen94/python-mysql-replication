@@ -10,8 +10,8 @@
 import json
 import sys
 
-from pymysqlreplication import BinLogStreamReader
-from pymysqlreplication.row_event import (
+from tornado_mysqlreplication import BinLogStreamReader
+from tornado_mysqlreplication.row_event import (
     DeleteRowsEvent,
     UpdateRowsEvent,
     WriteRowsEvent,

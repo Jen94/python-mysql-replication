@@ -28,7 +28,7 @@ class TestCommand(Command):
         """
         Finds all the tests modules in tests/, and runs them.
         """
-        from pymysqlreplication import tests
+        from tornado_mysqlreplication import tests
         import unittest
 
         unittest.main(tests, argv=sys.argv[:1])
@@ -37,18 +37,18 @@ class TestCommand(Command):
 version = "0.14"
 
 setup(
-    name="mysql-replication",
+    name="tornado-mysqlreplication",
     version=version,
-    url="https://github.com/noplay/python-mysql-replication",
-    author="Julien Duponchelle",
-    author_email="julien@duponchelle.info",
+    url="https://github.com/Jen94/tornado-mysql-replication",
+    author="Evgeny Shakhov",
+    author_email="jen9471@yandex.ru",
     description=("Pure Python Implementation of MySQL replication protocol "
-                 "build on top of PyMYSQL."),
+                 "build on top of Tornado-MySQL."),
     license="Apache 2",
-    packages=["pymysqlreplication",
-              "pymysqlreplication.constants",
-              "pymysqlreplication.tests"],
+    packages=["tornado_mysqlreplication",
+              "tornado_mysqlreplication.constants",
+              "tornado_mysqlreplication.tests"],
     cmdclass={"test": TestCommand},
     extras_require={'test': tests_require},
-    install_requires=['pymysql'],
+    install_requires=['tornado', 'Tornado-MySQL'],
 )

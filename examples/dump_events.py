@@ -5,7 +5,7 @@
 # Dump all replication events from a remote mysql server
 #
 
-from pymysqlreplication import BinLogStreamReader
+from tornado_mysqlreplication import BinLogStreamReader
 
 MYSQL_SETTINGS = {
     "host": "127.0.0.1",

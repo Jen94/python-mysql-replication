@@ -20,7 +20,7 @@ Tests
 
 When it's possible we have an unit test.
 
-*pymysqlreplication/tests/* contains the test suite. The test suite
+*tornado_mysqlreplication/tests/* contains the test suite. The test suite
 use the standard *unittest* Python module.
 
 **Be carefull** tests will reset the binary log of your MySQL server.

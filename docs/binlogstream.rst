@@ -3,5 +3,5 @@ BinLogStreamReader
 ##################
 
 
-.. automodule:: pymysqlreplication.binlogstream
+.. automodule:: tornado_mysqlreplication.binlogstream
     :members:
