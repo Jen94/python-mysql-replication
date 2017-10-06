@@ -20,3 +20,4 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+Thank to plazix: https://github.com/plazix/tornado-mysql-replication/tree/master/tornado_mysqlreplication
